@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Proxied",
+  "version": "1.1.1",
+  "description": "SOCKS5 proxy manager with auto-learning mode",
+  "permissions": ["proxy", "storage", "webNavigation"],
+  "host_permissions": ["https://www.google.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon-off-16.png",
+      "32": "icon-off-32.png",
+      "48": "icon-off-48.png",
+      "128": "icon-off-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon-off-16.png",
+    "32": "icon-off-32.png",
+    "48": "icon-off-48.png",
+    "128": "icon-off-128.png"
+  }
+}
