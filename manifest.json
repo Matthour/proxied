@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Proxied",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "SOCKS5 proxy manager with auto-learning mode",
   "permissions": ["proxy", "storage", "webNavigation"],
   "host_permissions": ["https://www.google.com/*"],
