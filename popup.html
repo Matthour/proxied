@@ -31,13 +31,15 @@ body { width: 280px; padding: 12px 12px 8px; font-family: system-ui; font-size: 
 .btn-delete:hover { background: #e0332b; }
 #footer { display: flex; align-items: center; margin-top: 8px; }
 #footer .credit { flex: 1; font-size: 10px; color: #555; }
+#footer .credit a { color: #555; text-decoration: none; border-bottom: 1px dotted #555; }
+#footer .credit a:hover { color: #888; border-bottom-color: #888; }
 .btn-add { width: 32px; height: 32px; border: none; border-radius: 50%; background: #007aff; color: #fff; cursor: pointer; font-size: 20px; line-height: 32px; text-align: center; padding: 0; box-shadow: 0 2px 6px rgba(0,0,0,0.2); flex-shrink: 0; }
 .btn-add:hover { background: #0066d6; }
 </style></head>
 <body>
   <div id="list"></div>
   <div id="footer">
-    <span class="credit">Made with &#10084; by Matthieu Hourdebaigt</span>
+    <span class="credit">Made with &#10084; by <a href="https://github.com/Matthour/proxied" target="_blank" rel="noopener">Matthieu Hourdebaigt</a> &amp; <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></span>
     <button id="add" class="btn-add">+</button>
   </div>
   <script src="popup.js"></script>

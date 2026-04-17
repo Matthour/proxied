@@ -36,7 +36,7 @@ sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$NEXT\"/" "$MANIFEST"
 mkdir -p dist
 ZIP="dist/proxied-v${NEXT}.zip"
 rm -f "$ZIP"
-zip -r "$ZIP" . -x "*.git*" "release.sh" "dist/*" "*.DS_Store"
+zip -r "$ZIP" . -x "*.git*" "release.sh" "README.txt" "dist/*" "*.DS_Store"
 
 git add -A
 git commit -m "$COMMIT_MSG"
